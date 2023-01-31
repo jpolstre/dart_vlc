@@ -31,7 +31,10 @@ class PrimaryScreen extends StatefulWidget {
 }
 
 class PrimaryScreenState extends State<PrimaryScreen> {
-  Player player = Player(id: 0);
+  Player player = Player(id: 0, commandlineArguments: [
+    '--http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',
+    '--http-referrer=https://sblongvu.com/',
+  ]);
   MediaType mediaType = MediaType.file;
   CurrentState current = CurrentState();
   PositionState position = PositionState();
